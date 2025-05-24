@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  position: fixed;
+  /* background-color: rgb(0, 255, 68); */
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  padding: 2vw 10.4vw;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 10;
+}
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav h1 {
+  font-size: 1.6vw;
+}
+
+.nav-part2 h4 {
+  font-size: 0.73vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+}
+.nav-part2 h5 {
+  margin-bottom: 1vw;
+  /* background-color: red; */
+  display: none;
+  overflow: hidden;
+}
+
+nav button {
+  background-color: #0ba34e;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.65s;
+}
+nav button:hover {
+  background-color: #ebf9ed;
+}
+nav button svg {
+  height: 0.8vw;
+  margin-left: 1.6vw;
+}
+#nav-bottom {
+  background-color: black;
+  height: 0%;
+  position: absolute;
+  border-bottom: 1px solid white;
+  transition: all ease 0.65s;
+  width: 79%;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+nav:hover #nav-bottom {
+  height: 125px;
+  bottom: -100%;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+.bottom-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+.bottom-div h5 {
+  overflow: hidden;
+  margin-bottom: 0.4vw;
+}
+.bottom-div h5 span {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 12px;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#page1 h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 8.5vw;
+}
+#page1 h1 svg {
+  height: 5vw;
+  width: 5.2vw;
+  border-radius: 50%;
+  background-color: rgb(13, 163, 78);
+}
+#page1 p {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 3vh;
+}
+.page1-something {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page1-something h4 {
+  font-weight: 400;
+  font-size: 1vw;
+  text-transform: lowercase;
+  padding: 5px 10px;
+  border: 1px solid rgb(116, 109, 109);
+  border-radius: 50px;
+  margin-top: 0.5vw;
+}
+
+.page1-something h4:nth-last-child(2) {
+  border: none;
+  padding: 2px;
+}
+#moving-div {
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+
+}
+#moving-div .move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-div .move img {
+  height: 1vw;
+  margin: 0 1.2vw;
+}
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+#blur-left{
+  height: 100%;
+  width: 20%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#blur-left {
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, black, transparent);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#blur-right {
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, transparent, black);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
