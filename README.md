@@ -247,7 +247,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Live Demo**: [View Website](https://your-lazarev-website.com)
+- **Live Demo**: [View Website](https://lazeravpradiip.netlify.app/)
 - **Repository**: [GitHub](https://github.com/codeboy-pro/Lazarev)
 - **Issues**: [Report Bug](https://github.com/codeboy-pro/Lazarev/issues)
 - **Discussions**: [Join Discussion](https://github.com/codeboy-pro/Lazarev/discussions)
